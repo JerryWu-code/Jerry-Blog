@@ -81,14 +81,14 @@ music:
   type: playlist    #require song, playlist, album, search, artist
   id: 6667180708    #require song id / playlist id / album id / search keyword
   fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
+  autoplay: true   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: true  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词
+  hideLrc: False     # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -139,7 +139,7 @@ socialLink:
   qq: 953855668
   weibo: https://weibo.com/u/6660435984
   zhihu: https://www.zhihu.com/people/wu-qi-long-34-60
-  rss: true # true、false
+  rss: false # true、false
 
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # You can add `toc: false` to the Front-matter of a post to turn off the TOC.
@@ -211,7 +211,7 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
@@ -235,24 +235,24 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    Python:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 85%
-    JavaScript:
+    Matlab:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
-    HTML5:
+    Shell:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS:
+    Linux:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
+      percent: 85%
     SQL:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 90%
-    程序设计:
+    ML & DL:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+      percent: 80%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -507,7 +507,7 @@ tuxiaochao:
   productId:
 #背景canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -524,7 +524,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
