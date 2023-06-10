@@ -321,7 +321,7 @@ valine:
   appId: vLZMUngioLYDPP88TgA8hLfJ-gzGzoHsz
   appKey: EGQtSZUxMVHni0ZrNsaejcoB
   notify: true
-  verify: false
+  verify: true
   visitor: true
   avatar: 'mm' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
